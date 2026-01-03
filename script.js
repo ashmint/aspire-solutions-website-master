@@ -48,3 +48,17 @@ if (fab) {
     }
   });
 }
+
+const params = new URLSearchParams(window.location.search);
+if (params.get("success") === "true") {
+  const successMessage = document.querySelector(".form-success");
+  if (successMessage) {
+    successMessage.hidden = false;
+  }
+
+  const contactSection = document.getElementById("contact");
+  if (contactSection) {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    contactSection.scrollIntoView({ behavior: prefersReduced ? "auto" : "smooth" });
+  }
+}

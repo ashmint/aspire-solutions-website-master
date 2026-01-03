@@ -758,6 +758,15 @@ select:focus {
   color: var(--muted);
 }
 
+.form-success {
+  background: #e8f7ed;
+  border: 1px solid rgba(19, 153, 88, 0.25);
+  color: #0e6b3d;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
 .site-footer {
   background: #151312;
   color: rgba(255, 255, 255, 0.8);
